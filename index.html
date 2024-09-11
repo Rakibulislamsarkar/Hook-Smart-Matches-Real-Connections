@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook | Smart Matches, Real Connections</title>
+    <meta name="Hook is a modern dating app that connects people through smart matching and real-time interaction. With personalized profiles, swipe features, and engaging ice-breakers, it makes finding meaningful connections easy and fun. Perfect for anyone seeking casual dates or serious relationships." content="description">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<style>
+    .detailscontainer{
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.756));
+    }
+    .like{
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(0);
+        opacity: 0;
+        transition:transform ease 0.4s;
+    }
+</style>
+<body>
+    <div class="w-full h-screen bg-transparent ">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <i class="like text-white ri-10x absolute ri-heart-3-fill z-[4]"></i>
+            <div class="mainCard w-full h-screen absolute z-[3] top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <img class="w-full h-full object-cover" src="" alt="Main Card Image">
+            </div>
+            <div class="incomingCard w-full h-screen absolute z-[2] top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <img class="w-full h-full object-cover" src="" alt="Incoming Card Image">
+            </div>
+        </div>
+        
+        <div class="w-full h-screen absolute top-0 z-[4]  flex flex-col justify-between">
+            <div class="navbar flex justify-between px-5 py-6">
+                <div class="profile w-[3rem] h-[3rem] relative">
+                    <div class="profileimg w-[3rem] h-[3rem] rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover" src="" alt="">
+                    </div>
+                         <div class="absolute bottom-0 right-0 -translate-y-[6px] translate-x-[3px] flex items-center justify-center w-5 h-5 bg-blue-600 rounded-full">
+                            <i class="text-white ri-add-fill"></i>
+                        </div>
+                </div>
+                    <div class="icon-container relative flex flex-col items-center justify-between gap-5">
+                        <div class="chaticon flex items-center justify-center w-[3rem] h-[3rem] bg-white/30 rounded-full">
+                            <i class="text-white ri-wechat-channels-line ri-lg"></i>
+                            <div class="badge absolute top-0 -translate-y-[5px] right-0 translate-x-[3px] flex items-center justify-center w-5 h-5 bg-[#FC5149] rounded-full">
+                                <h5 class="text-[13px] text-white font-[400]"></h5>
+                            </div>
+                        </div>
+                        <div class="likeicon relative flex items-center justify-center w-[3rem] h-[3rem] bg-white/30 rounded-full">
+                            <i class="text-white ri-heart-fill ri-lg"></i>
+                            <div class="badge2 w-5 h-5 flex items-center justify-center bg-[#FC5149] rounded-full absolute -translate-y-[5px] right-0 translate-x-[3px] top-0 ">
+                                <h5 class="text-[13px] text-white font-[400]"></h5>
+                            </div>
+                        </div>
+                        <div class="uploadicon flex items-center justify-center w-[3rem] h-[3rem] bg-white/30 rounded-full">
+                            <i class="text-white ri-lg ri-add-fill"></i>
+                        </div>
+                        <div class="explore w-[3rem] h-[3rem] bg-white/30 rounded-full flex items-center justify-center">
+                            <i class="text-white ri-lg ri-compass-3-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailscontainer px-5 py-6">
+                    <div class="details w-full">
+                        <div class="element location flex gap-4 items-center">
+                            <i class="w-[1.6rem] h-[1.6rem] flex items-center justify-center font-semibold bg-white rounded-full ri-corner-left-up-fill"></i>
+                            <h3 class="text-white"></h3>
+                        </div>
+                        <div class="element name flex text-white gap-5 mt-2">
+                            <h1 class="font-regular tracking-tighter text-6xl"></h1>
+                            <h1 class="font-regular tracking-tighter text-6xl opacity-60"></h1>
+                        </div>
+                        <div class="element tags flex gap-5 text-white mt-3">
+                            <div class="tag flex items-center bg-white/30 px-4 py-2 rounded-full gap-2">
+                                <i class="ri-netease-cloud-music-line"></i>
+                                <h3 class="text-sm tracking-tight"></h3>
+                            </div>
+                            
+                        </div>    
+                        <div class="element profileinfo text-white/80 mt-5">
+                                <p class="text-[15px]"></p>
+                        </div>
+                        <div class="element flex gap-5 items-start mt-5">
+                            <button class="deny ri-lg py-4 w-1/2 rounded-lg bg-white">
+                                <i class="ri-close-large-fill"></i>
+                            </button>
+                            <button class="accept ri-lg py-4 w-1/2 rounded-lg bg-[#FC5149]">
+                                <i class="text-white ri-heart-2-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
